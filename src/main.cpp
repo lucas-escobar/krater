@@ -3,8 +3,12 @@
 #include <iostream>
 
 int main() {
-  kt::KraterAppCreateInfo createInfo{};
   kt::KraterApp app;
+
+  kt::KraterAppCreateInfo createInfo{};
+  createInfo.appName = "Krater App";
+  createInfo.appHeight = 600;
+  createInfo.appWidth = 800;
   app.loadCreateInfo(&createInfo);
 
   try {
